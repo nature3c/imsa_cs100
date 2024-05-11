@@ -1,0 +1,22 @@
+body {background-color: #d0bdf4; font-family: georgia;} /* sets the background to the color states and changes the font */
+
+.inline-block { /* displays the pictures next to each other */
+   display: inline-block;
+}
+
+table, th, td { /* table styling */
+	border: 1px inset;
+}
+
+ table.center { /*aligns the table to the center and aligns all the text to the center */
+	text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+	width: 50%;
+  }
+  
+tr:hover {background-color: royalblue;} /* makes it so that you can hover over a row and that row will be highlighted*/
+
+body{ /* aligns all of the text inside of the body to the center */
+  text-align: center;
+}

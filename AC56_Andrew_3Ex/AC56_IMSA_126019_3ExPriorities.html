@@ -1,0 +1,146 @@
+<!-- Andrew Bae, 126019, AC56, I used Notepad++ to create this and the resources I used were w3schools, stack overflow, geeksforgeeks, and mozilla developer
+for flexbox. I worked on this assignment by myself. I did help other people with their assignments though. -->
+
+<html>
+	<head>
+		<title>EMatrix</title> <!-- Sets the title to EMatrix on the browser toolbar -->
+		<link rel="stylesheet" type="text/css" href="AC56_IMSA_126019_3ExPriorities.css" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	
+	<body>
+		<h1>IMSA Priorities and Eisenhower Matrix</h1>
+		
+		<div id="NavBar"> <!-- creates the navbar and links the names to the quadrants -->
+			<a href="#1">Quadrant 1 and 2</a> <!-- links the words to the 1st half of the matrix -->
+			<a href="#2">Quadrant 3 and 4</a>
+		</div>
+		
+		<dl> <!-- definition list -->
+			<dt><b>What is the Einsenhower Matrix?</b></dt> <!-- description term -->
+			<dd> <!-- description -->
+				<blockquote>
+					The Eisenhower Matrix is a way of time management that divides tasks into 4 categories: urgent and important,
+					urgent but notimportant, not urgent but important, and not urgent or important
+				</blockquote>
+			</dd>
+			<dt><b>Urgent and Important</b></dt>
+			<dd>
+				<blockquote>
+					Items in this category are important and urgent such as a test or meeting that is in a week and you need to prepare
+				</blockquote>
+			</dd>
+			<dt><b>Urgent but not important</b></dt>
+			<dd>
+				<blockquote>
+					Such items in this category are things that need to get done soon but are not as important such as buying groceries
+				</blockquote>
+			</dd>
+			<dt><b>Not urgent but important</b></dt>
+			<dd>
+				<blockquote>
+					This could be something such as needing to study for a unit test that is in a month or two
+				</blockquote>
+			</dd>
+			<dt><b>Not urgent or important</b></dt>
+			<dd>
+				<blockquote>
+					Items that are not urgent or important do not need much consideration and could be activities such as watching TikTok or YouTube just for fun
+				</blockquote>
+			</dd>
+		</dl>
+		
+		<div class="half1" id="1"> <!-- div to make a flexbox to contain 2 lists -->
+			<div class="horizontal"> <!-- div to be able to show the first 2 quads horizontally -->
+				<h3>Q1: Important and Urgent</h3>
+				<ol id="Q1">
+					<li>Study for BC1 quiz on Tuesday 2/6/24</li>
+					<li>Study for MI4 quiz on Thursday 2/8/24</li>
+					<li>Complete MI4 problem set by Thursday</li>
+					<li>Complete MI4 webwork by Thursday</li>
+					<li>Complete BC1 take home by Friday</li>
+					<li>Complete Spanish Homework by tomorrow 2/6/24</li>
+					<li>Complete the poster project with group by Sunday</li>
+					<li>Complete this Assignment for CSI</li>
+					<li>Study AP CSA</li>
+						<ol start=10> <!-- nested list starting at 10 -->
+							<li>Polymorphism</li>
+							<li>Recursion</li>
+							<li>Object and String classes</li>
+							<li>Math and Wrapper classes</li>
+							<li>ArrayList</li>
+							<li>Array</li>
+							<li>Inheritance</li>
+							<li>For and while loops</li>
+							<li>Binary, octadecimal, and hexadecimal</li>
+							<li>Boolean Algebra</li>
+						</ol>
+					<li value=20>Study AP BIO</li> <!-- changed the value of this to 20 to show it is less important than CSA -->
+				</ol>
+			</div>
+			
+			<div class="horizontal">
+				<h3>Q2: Important but not urgent<h3>
+				<ul id="Q2" class="q2">
+					<li>Learn C# for Unity</li>
+					<li>Review Python for CSI</li>
+					<li>Find sponsors for Hackathon</li>
+					<li>Review derivatives</li>
+					<li>Learn indefinite and definite integrals</li>
+					<li>Learn Taylor series</li>
+					<li>Find college course for integrals</li>
+					<li>Find summer internships</li>
+					<li>Find summer camps</li>
+					<li>Find summer pre-college programs</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="half2" id="2">
+			<div class="horizontal">
+				<h3>Q3: Not important but Urgent</h3>
+				<ul id="Q3" class="q3">
+					<li>Complete resume</li>
+					<li>Apply for internships</li>
+					<li>Buy more food for dorm</li>
+					<li>Wash clothes</li>
+					<li>Clean bathroom for extended</li>
+					<li>Find competitions for coding</li>
+					<li>Find competitions for math</li>
+					<li>Join more clubs</li>
+					<li>Get more board positions</li>
+					<li>Refresh SQL</li>
+				</ul>
+			</div>
+			
+			<div class="horizontal">
+				<h3>Q4: Not important and not urgent</h3>
+				<ul id="Q4" class="q4">
+					<li>Play Pal World</li>
+						<ul class="game">
+							<li>Fight the first boss</li>
+							<li>Catch a beegarde for honey</li>
+							<li>Make cakes</li>
+							<li>Hatch more Anubis</li>
+							<li>Catch 4 more digtoise</li>
+							<li>Catch a Suzaku</li>
+							<li>Fight the Elphidran</li>
+							<li>Upgrade base</li>
+							<li>Mine more ore</li>
+							<li>Increase player level</li>
+						</ul>
+					<li>Play Valorant</li>
+					<li>Play Rainbow 6 Seige</li>
+					<li>Buy in ear monitors</li>
+					<li>Watch 3blue1brown</li>
+					<li>Research what crypto projects are growing</li>
+					<li>Clean out computer dust</li>
+					<li>Upgrade to a recent gen CPU</li>
+					<li>Upgrade PSU to 850 watt</li>
+					<li>Add more storage to the computer</li>
+				</ul>
+			</div>
+		</div>
+		<img src = "sunglasses.png" style = "height:350px; width:250px; padding:10px;">
+	<body>
+</html>

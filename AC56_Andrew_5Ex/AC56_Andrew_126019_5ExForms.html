@@ -1,0 +1,108 @@
+<!-- Andrew Bae, 126019, AC56, I used Notepad++ to create this and the resources I used were w3schools, stack overflow, geeksforgeeks, mozilla developer, freecodecamp, and remove.bg to remove bakcgrounds. I created a logo from Logo.com and used a favicon generator to make it into a 16x16 favicon. -->
+
+<html> <!-- form to create an account for something -->
+	<head>
+		<title>Account Creation</title>
+		<link rel="stylesheet" type="text/css" href="5ExForms.css"/>
+		<link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- favicon is logo -->
+	</head>
+	
+	<body>
+		<!-- add banner here -->
+		<div class="banner-image">
+			<div class="banner-text">
+				<h1>Create an Account</h1>
+			</div>
+		</div>
+		
+		<!-- action points the form to the response page after submitting -->
+		<form action="response.html" target="_top">
+			<fieldset class="account"> <!-- groups similar elements -->
+				<legend> Account Information </legend> <!-- title for the contents inside the fieldset -->
+				<label class="main" for="fname">First name:</label><br> <!-- creates the label to indentify input fields and declares the id -->
+				<input type="text" id="fname" name="fname" placeholder="John" required autofocus><br> <!-- creates the entry box and calls the id and names the eventual input -->
+															<!-- the value="something" to add default text into the box -->
+															<!-- the name="something" is important when returning the value for the response form -->
+															<!-- the autofocus makes it so that is selected first NOTE: only 1 input can have autofocus in a page -->
+				<label class="main" for="lname">Last name:</label><br>
+				<input type="text" id="lname" name="lname" placeholder="Doe" required><br> <!-- placeholder makes that ghost text in the textbox -->
+			
+				<label class="main" for="email">Email:</label><br>
+				<input type="text" id="email" name="email" placeholder="johndoe@gmail.com" maxlength="50" required><br> <!-- required makes the part required -->
+				
+				<!-- maxlength for the email because emails should not exceed 50 characters and minlength for password as anyone making a password should make it at least 8 characters -->
+				
+				<label class="main" for="password">Password:</label><br> <!-- check for 1 capital, 1 lowercase, 1 special character --->
+				<input type="password" id="password" name="password" placeholder="password123" minlength="8" required><br> <!-- input type password to hide what is being typed -->
+			</fieldset>
+			
+			<fieldset class="survey"> <!-- style using border radius property -->
+				<legend>Optional Survey</legend>
+				<!-- dropdown box with choices -->
+				<label class="main" for="age_group">What age group are you in?</label><br>
+				<select name="age_group" id="age">
+					<option value="13-15">13-15</option>
+					<option value="16-18" selected>16-18</option>
+					<option value="18-21">18-21</option> <!-- use disabled after the value="" to disable the option and selected after value="" to have that as default selection both before the > before text -->
+					<option value="21+">21+</option>
+					<option value="100+" disabled>100+</option>
+				</select> <br>
+				
+				<br>
+			
+				<!-- radio buttons -->
+				<label class="main" for="find_out">How did you find out about this?</label><br> <!-- the for="" requires the name of the elements-->
+				<input type="radio" id="family" name="find_out" value="Family">
+				<label for="family">Family</label><br>
+			
+				<input type="radio" id="friend" name="find_out" value="Friend">
+				<label for="friend">Friend</label><br>
+			
+				<input type="radio" id="school" name="find_out" value="School">
+				<label for="school">School</label><br>
+			
+				<input type="radio" id="other" name="find_out" value="Other">
+				<label for="other">Other</label><br>
+				
+				<br>
+			
+				<!-- checkboxes -->
+				<label class="main" for="os">What operating systems do you use?</label><br>
+				<input type="checkbox" id="os1" name="os" value="Mac">
+				<label for="os1">Macintosh</label><br>
+			
+				<input type="checkbox" id="os2" name="os" value="Windows">
+				<label for="os2">Windows</label><br>
+			
+				<input type="checkbox" id="os3" name="os" value="Linux">
+				<label for="os3">Linux</label><br>
+			
+				<input type="checkbox" id="os4" name="os" value="Android">
+				<label for="os4">Android</label><br>
+				
+				<br>
+				
+				<!-- textarea -->
+				<label class="main" for="comments">Any comments?</label><br>
+				<textarea id="comments" name="comments" rows="4" cols="40">Add any comments here!</textarea> <!-- cols mean the width -->
+			</fieldset>
+					
+			<br>
+			
+			<input type="submit" value="Submit" onclick="clicked()"> <!-- submit button-->
+			<input type="reset" value="Reset"> <!-- reset button -->
+			
+				<script type="text/javascript"> <!-- submit confirmation-->
+				function clicked() {
+					if (confirm('Do you want to submit?')) {
+					yourformelement.submit();
+					} else {
+					return false;
+					}
+				}
+				</script>
+			
+		</form>
+		
+	</body>
+</html>

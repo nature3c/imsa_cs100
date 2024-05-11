@@ -1,0 +1,258 @@
+<!-- Andrew Bae, 126019, AC56, I used Notepad++ to create this and the resources I used were w3schools, stack overflow, geeksforgeeks, and mozilla developer
+for flexbox. I also used bits of code from all of my past assignments in order to reduce work time. The Spotify Album and linking it idea I got from Matthew when I was talking to him.
+The images of the albums are from soundcloud and the background is from google. The github links are projects I have contributed to. I found the icon for the favicon
+and image for the bullets online. I also resized those using an online resizer. -->
+
+<html>
+
+	<head>
+		<title>About me</title>
+		<link rel="stylesheet" type="text/css" href="4ExSWOT.css" />
+		<link rel="icon" type="image/x-icon" href="images/java.ico"> <!-- ADD A FAVICON -->
+	</head>
+	
+	<body>
+	
+		<h1>Overview of Me</h1>
+			
+		<div id="NavBar" class="navbar0"> <!-- creates the navbar and links the different assignments -->
+			<div class= "links0"> Check out my other pages: </div>
+			<div class="links0"><a href="other_pages/AC56_Andrew_1Ex/AC56.Andrew1_1.html">Passions and Aspirations</a></div> <!-- links the words to the different assignments -->
+			<div class="links0"><a href="other_pages/AC56_Andrew_2Ex/AC56_IMSA_126019_2ExInspiration.html">My Inspiration</a></div>
+			<div class="links0"><a href="other_pages/AC56_Andrew_3Ex/AC56_IMSA_126019_3ExPriorities.html">Priorities</a></div>
+		</div>
+		 
+		<br>
+		 
+		<div id="NavBar" class="navbar1"> <!-- creates the navbar and links the names to the according areas -->
+			<div class="links1"><a href="#bio">Biography</a></div>
+			<div class="links1"><a href="#me">Picture of me</a></div>
+			<div class="links1"><a href="#contact">Contact information</a></div>
+			<div class="links1"><a href="#1">Strengths and Weaknesses</a></div> <!-- links the words to the 1st half of the matrix -->
+			<div class="links1"><a href="#2">Opportunities and Threats</a></div> 
+		</div>
+		
+		</div class="part"> <!-- div for flexbox-->
+			<div class="horizontal"> <!-- biography -->
+				<h3 id="bio">Biography</h3>
+				<ul>
+					<li>Attending the Illinois Mathematics and Science Academy</li>
+					<li>Attended Northwestern's Cybersecurity Camp</li>
+					<li>Worked on several projects such as <a href="https://github.com/nature3c/HappyHour" target=blank>Happy Hour</a> and <a href="https://github.com/staruu-u/IMSA_Room_Planner" target=blank>IMSA Room Planner</a>
+						<ol>
+							<li>Happy Hour is an app made in Java to find deals from the internet<br> and show it in a user friendly way on an android phone</li>
+							<li>IMSA Room Planner is an app made in C# to allow students to <br> virtualize their room and create the best layout for them</li>
+						</ol>
+					<li>Skills</li> 
+						<ul> <!-- change the bullets for this to an image -->
+							<li>Java, JavaScript, Python, C#</li>
+							<li>PostgreSQL, Firebase</li>
+							<li>UNIX/Linux</li>
+							<li>Cybersecurity: Sec+ Certified</li>
+						</ul>
+					<li>Languages</li>
+						<ul>
+							<li>Korean</li>
+							<li>English</li>
+							<li>Spanish</li>
+						</ul>
+				</ul>
+			</div>
+				
+			<div id="me" class="horizontal"> <!-- image -->
+				<img src = "images/me.jpg" style = "height:350px; width:250px; padding:10px;">
+			</div>
+		
+			<div id="contact" class="horizontal"> <!-- contact information include: figure caption, address tag, email link that opens email app, and a quote of choice -->
+				<h3>Contact Information</h3>
+				<ul>
+					<li><a href="mailto:andrew.bae08@gmail.com">Send me an email!</a></li>
+					<li> 
+						<figure> 
+							<img src="images/imsa.jpg" alt="imsa" width="80%" height="20%"> <!-- link image of IMSA -->
+							<figcaption>The school that I currently attend <address><a href="https://www.google.com/maps/dir//1500+Sullivan+Rd,+Aurora,+IL+60506/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x880ee502ee80f677:0xf6032e7380ec81a1?sa=X&ved=2ahUKEwixv6qVr4OEAxUllIkEHc3uDvcQwwV6BAgQEAA" target=blank>1500 Sullivan Rd., Aurora, IL 60506</a></address></figcaption>
+						</figure> 
+					</li>
+					<li><i>"You miss 100% of the shots you don't take" - Wayne Gretzky</i></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		
+		<div class="part" id="1"> <!-- div to make a flexbox to contain 2 lists -->
+			<div class="horizontal"> <!-- div to be able to show the first 2 quads horizontally -->
+				<h3>Strengths</h3>
+				<ul id="Q1">
+					<li>Proficient in Java</li>
+						<ol> <!-- nested ordered list -->
+							<li>Great at solving math problems</li>
+							<li>Studied a lot for the CSA test</li>
+							<li>Planning to take Advanced Programming</li>
+						</ol>
+					<li>Able to teach math up to Calculus BC1</li>
+					<li>When working on something will complete it</li>
+					<li>Very interested in math and computer science</li>
+					<li>Good financial decisions</li>
+				</ul>
+			</div>
+			
+			<div class="horizontal">
+				<h3>Weaknesses</h3>
+				<ul id="Q2" class="q2">
+					<li>Not the best at pre-calculus</li>
+						<ul class="circle"> <!-- Nested unordered list MAKE SURE TO STYLE WITH DIFFERENT SHAPE BULLETS -->
+							<li>Not the best at finding domains of rational functions</li>
+							<li>Not the best at solving problems involving sequences and series</li>
+						</ul>
+					<li>I don't like reading books that I find uninteresting</li>
+					<li>Will most likely google problems to find out how to solve it</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="part" id="2">
+			<div class="horizontal">
+				<h3>Opportunities</h3>
+				<ul id="Q3" class="q3">
+					<li>Lots of internships available</li>
+					<li>Learn more coding languages via Udemy (not sponsored)<li>
+						<ul class="bImage"> <!-- style with the bullets being images -->
+							<li>Learning advanced Java</li>
+							<li>Refreshing Python</li>
+							<li>Looking for a free C# course</li>
+						</ul>
+				</ul>
+			</div>
+			
+			<div class="horizontal">
+				<h3>Threats</h3>
+				<ul id="Q4" class="q4">
+					<li>Changing cybersecurity standards means I have to keep learning</li>
+					<li>As Java keeps updating I need to keep up with it</li>
+					<li>Not enough time to do everything I want to in a day</li>
+			</div>
+		</div>
+		
+		<!-- Create more sections to include things you enjoy (e.g., music, movies, games, sports, food in appropriate sections with correct labels.
+		Use footer and time stamp to record (1 pt.)-->
+
+		<h1>Interests</h1>
+		
+		<div class="part">
+			<ul>
+				<div class="horizontal">
+					<li>Favorite Sports</li>
+						<ol>
+							<li>Football</li>
+							<li>Track and Field</li>
+							<li>Golf</li>
+							<li>Basketball</li>
+							<li>Volleyball</li>
+						
+						</ol>
+				</div>
+				<div class="horizontal">
+					<li>Favorite Food</li>
+						<ol>
+							<li>Egg Fried Rice</li>
+							<li>Tteokbokki</li>
+							<li>Ramen</li>
+							<li>Steak</li>
+							<li>Carbonara</li>
+						</ol>
+				</div>
+				<div class="horizontal">
+					<li>Favorite Shows</li>
+						<ol>
+							<li>The Office</li>
+							<li>Brooklyn 99</li>
+							<li>Suits</li>
+							<li>Lab Rats</li>
+							<li>Breaking Bad</li>
+						</ol>
+				</div>
+			</ul>
+		</div> 
+			<h1>Favorite Songs to Listen to</h1> <!-- fix how this looks EDIT: fixed by moving this from a list to a header and outside of the divs because that would make it part of a flexbox NOTE: is now more visually appealing-->
+			<p>Click on the image to go to Spotify!</p>
+				<div class="part">
+						<ul class="nodots"> <!-- put images in and put song name as fig caption and link it to spotify -->
+							<div class="horizontal">
+								<li>
+									<figure>
+										<a href="https://open.spotify.com/track/7rbECVPkY5UODxoOUVKZnA" target=blank><img src="images/kanye.jpg" alt="i_wonder" width="250px" height="250px" class="img"></a> <!-- links the image to spotify -->
+									<figcaption align=center>I Wonder by Kanye West</figcaption>
+								</li>
+							</div>
+							<div class="horizontal">
+								<li>
+									<figure>
+										<a href="https://open.spotify.com/track/7EAMXbLcL0qXmciM5SwMh2" target=blank><img src="images/mac.jpg" alt="heart_to_heart" width="250px" height="250px" class="img"></a>
+									<figcaption align=center>Heart to Heart by Mac DeMarco</figcaption>
+								</li>
+							</div>
+							<div class="horizontal">
+								<li>
+									<figure>
+										<a href="https://open.spotify.com/track/4OmfWzukSVD140NiAIEjem" target=blank><img src="images/lacy.jpg" alt="static" width="250px" height="250px" class="img"></a>
+									<figcaption align=center>Static by Steve Lacy</figcaption>
+								</li>
+							</div>
+							<div class="horizontal">
+								<li>
+									<figure>
+										<a href="https://open.spotify.com/track/4vHNeBWDQpVCmGbaccrRzi" target=blank><img src="images/woozy.jpg" alt="goodie_bag" width="250px" height="250px" class="img"></a>
+									<figcaption align=center>Static by Steve Lacy</figcaption>
+								</li>
+							</div>
+							<div class="horizontal">
+								<li>
+									<figure>
+										<a href="https://open.spotify.com/track/7EQvdUJqZ2i7SWvSB2VqGA" target=blank><img src="images/doom.jpg" alt="doom" width="250px" height="250px" class="img"></a>
+									<figcaption align=center>Doomsday by MF DOOM</figcaption>
+								</li>
+							</div>
+							<div class="horizontal">
+								<li>
+									<figure>
+										<a href="https://open.spotify.com/track/7yNf9YjeO5JXUE3JEBgnYc" target=blank><img src="images/dominic.jpg" alt="babydoll" width="250px" height="250px" class="img"></a>
+									<figcaption align=center>Babydoll by Dominic Fike</figcaption>
+								</li>
+							</div>
+							<div class="horizontal">
+								<li>
+									<figure>
+										<a href="https://open.spotify.com/track/6fMzgFFGzWCwiHMzDzNpp5" target=blank><img src="images/whoheem.jpg" alt="lets_link" width="250px" height="250px" class="img"></a>
+									<figcaption align=center>Lets Link by WhoHeem</figcaption>
+								</li>
+							</div>
+							<div class="horizontal">
+								<li>
+									<figure>
+										<a href="https://open.spotify.com/track/1JO1xLtVc8mWhIoE3YaCL0" target=blank><img src="images/theturtles.jpg" alt="happy_together" width="250px" height="250px" class="img"></a>
+									<figcaption align=center>Happy Together by The Turtles</figcaption>
+								</li>
+							</div>
+						</ul>
+					
+				</div>
+			</ul>
+		</div>
+		
+		<!-- make a footer and timestamp here -->
+		
+		<footer> 
+			<button onclick="myFunction(event)">Time since WebPage was loaded in milliseconds!</button>
+			<p> Time since this document was loaded: <span id="demo"></span> </p> 
+		</footer>
+		
+		<script> <!-- timestamp code from w3schools -->
+			function myFunction(event) {
+			var n = event.timeStamp;
+			document.getElementById("demo").innerHTML = n;
+			}
+		</script>
+		
+	</body>
+	
+</html>

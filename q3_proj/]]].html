@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<title>Contact Us</title> <!-- Sets the title on the browser toolbar -->
+		<link rel="stylesheet" type="text/css" href="q3project.css" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	
+	<body>
+		<header>
+			<div id="NavBar" class="navbar"> <!-- navbar to link to other pages -->
+			
+				<a href="index.html"><div class="logo">Law Office of Jihyun Kim LLC</div></a>
+			
+				<div class="dropdown"> <!-- dropdown box with the other boxes underneath it -->
+   					<button class="dropbtn">Areas of Practice</button>
+   					<div class="dropdown-content"> 
+     					<a href="temp_visa.html">Non-Immigrant Visas </a>
+      					<a href="immigrant_visa.html">Green Cards/Immigrant Visas</a>
+     					<a href="removal.html">Removal/Deportation</a>
+     				</div>
+ 				</div> 
+ 						
+				<div class="dropdown"> <!-- make this not show a box twice -->
+					<a href=""><button class="dropbtn">Contact Us</button></a>
+				</div>
+			
+			</div>
+		</header>
+		
+		<!-- just a banner image here -->
+		<div class="banner-image">
+			<div class="banner-text">
+				<h1>Contact Us<h1>
+			</div>
+		</div>
+		
+		<!-- webpage actual info-->
+		<div class="webpage">
+		
+			<div class="horizontal">
+				<form action="response.html" target="_top">
+					<fieldset>
+						<legend>Contact Form</legend>
+						<label class="main" for="fname">Full Name:</label><br> <!-- label makes the text for the input -->
+						<input type="text" id="fname" name="fname" placeholder="Jihyun Kim" required autofocus><br> <!-- input type makes the actual input field -->
+						
+						<label class="main" for="fname">Email Address:</label><br>
+						<input type="text" id="fname" name="fname" placeholder="jihyunkim@wichitaimmigration.com" required><br>
+						
+						<label class="main" for="fname">Company:</label><br>
+						<input type="text" id="fname" name="fname" placeholder="Law Office of Jihun Kim LLC"><br>
+						
+						<label class="main" for="fname">Street Address:</label><br>
+						<input type="text" id="fname" name="fname" placeholder="9370 E. Central"><br>
+						
+						<label class="main" for="fname">City, State, Zip:</label><br>
+						<input type="text" id="fname" name="fname" placeholder="Wichita, KS 67206"><br>
+						
+						<label class="main" for="fname">Phone:</label><br>
+						<input type="text" id="fname" name="fname" placeholder="316-558-5770"><br>
+						
+						<label class="main" for="fname">Fax:</label><br>
+						<input type="text" id="fname" name="fname" placeholder="316-558-5771"><br>
+						
+						<label class="main" for="comments">Your Message:</label><br>
+						<textarea id="comments" name="comments" rows="13" cols="50">Type here!</textarea>
+						
+						<input class="button" type="submit" value="Submit" onclick="clicked()"> <!-- submit button-->
+						<input class="button" type="reset" value="Reset"> <!-- reset button -->
+			
+						<!-- JavaScript for the confirm button -->
+						<script type="text/javascript">
+							function clicked() {
+							if (confirm('Do you want to submit?')) {
+								yourformelement.submit();
+							} else {
+							return false;
+							}
+						}
+						</script>
+						
+					</fieldset>
+				</form>
+				<!-- include Full Name, Email, company, street address, city state zip, phone, fax, your message, submit button, and disclaimer -->
+			</div>
+			
+			<div class="horizontal">
+				<!-- put contact information here -->
+				<ul class="contact_info">
+					<li>Law Office of Jihyun Kim, LLC</li>
+					<li>Kansas Green Card Lawyer</li>
+					<li>9370 E. Central, Wichita, KS 67206</li>
+					<li>Tel: 316-558-5770</li>
+					<li>Fax: 316-558-5771</li>
+					<li>E-mail: <a href="mailto:jihyunkim@wichitaimmigration.com"><u>jihyunkim@wichitaimmigration.com</u></a></li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<footer> <!-- add a footer with disclaimer -->
+			<p>
+				The information you obtain at this site is not, nor is it intended to be, legal advice. You should consult an attorney for individual advice regarding
+				your own situation.<br>
+				© 2020 by Law Office of Jihyun Kim, LLC. All rights reserved. You may reproduce materials available at this site for your own personal use and for
+				non-commercial distribution. All copies must include this copyright statement.
+			</p>
+		</footer>
+	</body
+</html>

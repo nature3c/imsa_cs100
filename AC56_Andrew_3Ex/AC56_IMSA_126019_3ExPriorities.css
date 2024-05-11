@@ -1,0 +1,47 @@
+body { 
+	text-align: center; /* aligns all text to the center*/
+	background-color: #32de84;
+}
+
+dl {
+	font-size: 18px;
+	font-family: garamond;
+}
+
+ul {
+	list-style: none; /* default value for unordered list is nothing */
+}
+
+ul.q2 {
+	list-style: none; /* redundant but proof of concept */
+}
+
+ul.q3 {
+	list-style: square; /* sets the bullet for this unordered list to square */
+}
+
+ul.q4 {
+	list-style: circle;
+}
+
+ul.game {
+	list-style-image: url("16x16.png"); /* sets the bullet image */
+}	
+
+div.horizontal { /* allows for the 2 divs in the list to be shown horizontally */
+	display: inline-block;
+	margin-right: 30px; /* add spacing between items */
+	
+}
+
+div.half1 {
+	display: flex;
+	justify-content: center; /* different than align-items as that would change the position vertically */
+	font-family: garamond;
+}
+
+div.half2 {
+	display: flex;
+	justify-content: center;
+	font-family: garamond;
+}	

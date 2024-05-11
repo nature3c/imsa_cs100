@@ -1,0 +1,109 @@
+body { 
+	text-align: center-right; /* aligns all text to the center*/
+	background-image: url('images/background.png');
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	font-family: garamond;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+div.navbar0 {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+div.navbar1 {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+div.horizontal { /* allows for the divs in the list to be shown horizontally */
+	display: inline-block;
+	margin-right: 30px; /* add spacing between items */
+	
+}
+
+div.links0 {
+	display: flex;
+	justify-content: center;
+	width: auto;
+	height: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+div.links1 { /* fix this CSS so that the links show next to each other not on top of eachother EDIT: fixed it by doing justify content and separated using padding + margins*/
+	display: flex;
+	justify-content: center;
+	width: auto;
+	height: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 5px;
+	border: 2px solid white;
+}
+
+li.songs { /* fix this so that the songs heading shows up in center */
+	display: flex;
+	justify-content: center; /* different than align-items as that would change the position vertically */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul.nodots {
+	list-style: none
+}
+
+div.part {
+	display: flex;
+	justify-content: center; /* different than align-items as that would change the position vertically */
+}
+
+ul.circle {
+	list-style-type: upper-roman;
+}
+
+ul.bImage {
+	list-style-image: url("images/bullet.jpg");
+}
+
+footer { /* creates the footer and it contains the timestamp button and output */
+	text-align: center;
+}
+
+a:link { /* this + below affects the highlight color of links */
+  color: #B6D0E2;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #B6D0E2;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}

@@ -1,0 +1,75 @@
+body {
+	background-color: #eeeeee;
+	text-align: center;
+}
+
+.banner-image { /* code from w3schools for hero-image */
+	/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("wallpaper2.jpg");
+	height: 25%;
+	/* Position and center the image to scale nicely on all screens */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+/* Place text in the middle of the image */
+.banner-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+} /* code until here from w3schools */
+
+fieldset { /* reduces the width of the fieldsets and makes it so that they appear in the center */
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+label.main {
+	display: inline-block; /* labels are inline elements and padding can't be used without making labels show as blocks */
+	padding-top: 5px; /* added padding in order to make it look nicer and less clumped */
+	padding-bottom: 5px;
+	border-radius: 10px;
+}
+
+textarea {
+	resize: vertical; /* makes it so that textarea expands vertically only */
+}
+
+/* The animation code from w3schools */
+@keyframes rgb {
+	0%		{background-color: red;}
+	25%		{background-color: yellow;}
+	50%		{background-color: blue;}
+	100% 	{background-color: green;}
+}
+
+/* animation: the box is 100px by 25px and starts at red and goes through the animation code above. The animation takes 4 seconds and loops forever. */
+button.animation {
+	width: 100px;
+	height: 25px;
+	background-color: red;
+	animation-name: rgb;
+	animation-duration: 4s;
+	animation-iteration-count: infinite; /* could also be a number */
+}
+
+/* transition starts when mouse hovers over the image; width increases to 800px */
+img.transition:hover {
+  width: 800px;
+}
+
+/* the width and height start at 320px and the transition of the width takes 3 seconds */
+.transition {
+  width: 320px;
+  height: 320px;
+  transition: width 3s;
+  /* transition-delay: 1s; Note: looks weird with the delay */
+}
